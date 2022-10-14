@@ -1,7 +1,10 @@
 <script>
 
+import MyButton from "@/stories/Button";
 export default /*#__PURE__*/{
-  name: 'Vuthinh0301VueLibsSample', // vue component name
+  name: 'Vuthinh0301VueLibsSample',
+  components: {MyButton},
+ // vue component name
   data() {
     return {
       counter: 5,
@@ -43,22 +46,7 @@ export default /*#__PURE__*/{
 
 <template>
   <div class="vuthinh0301-vue-libs-sample">
-    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
-      Click +1
-    </button>
-    <button @click="decrement">
-      Click -1
-    </button>
-    <button @click="increment(5)">
-      Click +5
-    </button>
-    <button @click="decrement(5)">
-      Click -5
-    </button>
-    <button @click="reset">
-      Reset
-    </button>
+    <my-button label="Button" primary />
   </div>
 </template>
 
